@@ -18,6 +18,7 @@ const githubApiAutocomplete = {
 
   // Отображаем результаты поиска
   showSearchResult: function() {
+    searchResultList.innerHTML = ''
     if (this.searchResult.length !== 0) {
       this.searchResult.forEach((item, i) => {
         if (i < 5) {
